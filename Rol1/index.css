@@ -1,0 +1,86 @@
+@import url("style.css");
+
+/* 
+universal
+etiqueta -> h1,img,p, input
+id -> unico en el archivo -> atributo id
+class -> agrupar elementos y les pongo una class
+*/
+
+* {
+    background-color: white;
+}
+
+h2 {
+    color: #1591DC !important;
+    font-size: 65px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 40px;
+
+}
+
+h5 {
+    color: #1591DC !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer {
+    color: #1591DC !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+#Contenedor-tarjetas {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+#Menu {
+    background-color: #C4E2F5 !important;
+
+
+}
+
+p {
+    font-size: 18px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a {
+    color: #1591DC !important;
+    font-size: 22px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.Nombre-Estudiante {
+    color: #1591DC !important;
+}
+
+

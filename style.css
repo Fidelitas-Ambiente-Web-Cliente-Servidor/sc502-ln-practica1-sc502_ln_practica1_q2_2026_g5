@@ -1,0 +1,95 @@
+/*
+
+/*
+PALETA DE COLORES
+white;
+#1591DC
+*/
+
+/*
+FUENTE PARA TITULOS
+ font-size: 65px
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+FUENTE PARA PÁRRAFOS
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 
+
+
+FOOTER:
+      <footer>
+    <div class="container text-center">
+
+        <p>© 2026 NextGen Academy | Todos los derechos reservados.</p>
+
+        <a href="https://facebook.com" target="_blank">
+            <img src="../images/facebook.png" class="imagen-footer" alt="Facebook">
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+            <img src="../images/instagram.png" class="imagen-footer" alt="Instagram">
+        </a>
+
+        <a href="https://x.com" target="_blank">
+            <img src="../images/twitter.png" class="imagen-footer" alt="X">
+        </a>
+
+        <a href="https://whatsapp.com" target="_blank">
+            <img src="../images/whatsapp.png" class="imagen-footer" alt="Whatsapp">
+        </a>
+
+    </div>
+</footer>
+
+
+NAVBAR:
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="NextGen Academy" width="180"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profesores</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-primary" type="submit">Inscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+}
+
+
+Background NavBar
+#Menu {
+    background-color: #C4E2F5 !important;
+
+
+}
+*/
+
+
+
