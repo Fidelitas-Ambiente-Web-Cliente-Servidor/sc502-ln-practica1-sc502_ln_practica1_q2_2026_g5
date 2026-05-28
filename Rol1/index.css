@@ -16,7 +16,6 @@ h2 {
     font-size: 65px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 40px;
-
 }
 
 h5 {
@@ -26,9 +25,8 @@ h5 {
 
 footer {
     color: #1591DC !important;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 
 #Contenedor-tarjetas {
     background-color: white;
@@ -101,17 +99,15 @@ header,
 
 p {
     font-size: 18px !important;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 a {
     color: #1591DC !important;
     font-size: 22px !important;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .Nombre-Estudiante {
     color: #1591DC !important;
 }
-
-
