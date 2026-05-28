@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cursos | NextGen Academy</title>
+    <link rel="stylesheet" href="css/cursos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="NextGen Academy" width="180">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profesores.html">Profesores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-primary" type="submit">Inscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="encabezado-catalogo">
+            <h1>Catálogo de Cursos</h1>
+            <p class="descripcion-catalogo">
+                Explora nuestra oferta académica organizada por áreas de conocimiento. Encuentra el curso ideal para
+                impulsar tu carrera en tecnología, con clases prácticas, instructores certificados y contenido
+                actualizado.
+            </p>
+        </section>
+
+        <section class="seccion-busqueda" aria-label="Buscar cursos">
+            <form class="formulario-busqueda" role="search" action="#" method="get">
+                <input type="search" name="q" placeholder="Buscar por nombre, categoría o tecnología..."
+                    aria-label="Buscar cursos">
+                <button class="btn-buscar" type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <h2>Nuestra oferta</h2>
+
+        <!-- Categoría 1: Desarrollo de Software -->
+        <section class="seccion-categoria" aria-labelledby="cat-desarrollo">
+            <h3 class="titulo-categoria" id="cat-desarrollo">Desarrollo de Software</h3>
+            <p class="subtitulo-categoria">Programación, lenguajes y creación de aplicaciones</p>
+
+            <div class="container-fluid">
+                <div class="row contenedor-tarjetas">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <article class="card" style="width: 22rem;">
+                            <img src="img/progra.jpg" class="imagen-card" alt="Programación básica">
+                            <div class="card-body">
+                                <span class="etiqueta-categoria">Desarrollo de Software</span>
+                                <h5 class="card-title">Programación básica</h5>
+                                <p class="card-text">Aprende variables, estructuras de control, métodos, arreglos y los
+                                    pilares de la programación orientada a objetos con ejercicios guiados.</p>
+                                <div class="curso-meta">
+                                    <p class="curso-duracion">⏱ 8 semanas</p>
+                                    <p class="curso-precio">$149</p>
+                                </div>
+                                <button class="btn btn-primary w-100" type="button">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <article class="card" style="width: 22rem;">
+                            <img src="img/web.jpg" class="imagen-card" alt="Desarrollo Web Full Stack">
+                            <div class="card-body">
+                                <span class="etiqueta-categoria">Desarrollo de Software</span>
+                                <h5 class="card-title">Desarrollo Web Full Stack</h5>
+                                <p class="card-text">Construye sitios y aplicaciones web con HTML, CSS, JavaScript y
+                                    fundamentos de backend para proyectos reales.</p>
+                                <div class="curso-meta">
+                                    <p class="curso-duracion">⏱ 12 semanas</p>
+                                    <p class="curso-precio">$219</p>
+                                </div>
+                                <button class="btn btn-primary w-100" type="button">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <article class="card" style="width: 22rem;">
+                            <img src="img/python.jpg" class="imagen-card" alt="Python para principiantes">
+                            <div class="card-body">
+                                <span class="etiqueta-categoria">Desarrollo de Software</span>
+                                <h5 class="card-title">Python para principiantes</h5>
+                                <p class="card-text">Domina la sintaxis de Python, estructuras de datos, funciones y
+                                    automatización de tareas con proyectos prácticos.</p>
+                                <div class="curso-meta">
+                                    <p class="curso-duracion">⏱ 10 semanas</p>
+                                    <p class="curso-precio">$179</p>
+                                </div>
+                                <button class="btn btn-primary w-100" type="button">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Categoría 2: Infraestructura y Datos -->
+        <section class="seccion-categoria" aria-labelledby="cat-infraestructura">
+            <h3 class="titulo-categoria" id="cat-infraestructura">Infraestructura y Datos</h3>
+            <p class="subtitulo-categoria">Redes, bases de datos y administración de sistemas</p>
+
+            <div class="container-fluid">
+                <div class="row contenedor-tarjetas">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <article class="card" style="width: 22rem;">
+                            <img src="img/redes.jpg" class="imagen-card" alt="Introducción a redes">
+                            <div class="card-body">
+                                <span class="etiqueta-categoria">Infraestructura y Datos</span>
+                                <h5 class="card-title">Introducción a redes</h5>
+                                <p class="card-text">Fundamentos de redes informáticas: direccionamiento IP, modelos
+                                    OSI y TCP/IP, y comunicación entre dispositivos.</p>
+                                <div class="curso-meta">
+                                    <p class="curso-duracion">⏱ 6 semanas</p>
+                                    <p class="curso-precio">$129</p>
+                                </div>
+                                <button class="btn btn-primary w-100" type="button">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <article class="card" style="width: 22rem;">
+                            <img src="img/bases.jpg" class="imagen-card" alt="Lenguajes de bases de datos">
+                            <div class="card-body">
+                                <span class="etiqueta-categoria">Infraestructura y Datos</span>
+                                <h5 class="card-title">Lenguajes de bases de datos</h5>
+                                <p class="card-text">Diseña y administra bases de datos con SQL: tablas, relaciones,
+                                    llaves primarias y consultas de inserción y actualización.</p>
+                                <div class="curso-meta">
+                                    <p class="curso-duracion">⏱ 9 semanas</p>
+                                    <p class="curso-precio">$169</p>
+                                </div>
+                                <button class="btn btn-primary w-100" type="button">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <article class="card" style="width: 22rem;">
+                            <img src="img/linux.jpg" class="imagen-card" alt="Administración de servidores Linux">
+                            <div class="card-body">
+                                <span class="etiqueta-categoria">Infraestructura y Datos</span>
+                                <h5 class="card-title">Administración de servidores Linux</h5>
+                                <p class="card-text">Gestiona usuarios, permisos, servicios y despliegue de
+                                    aplicaciones en entornos Linux de forma segura y eficiente.</p>
+                                <div class="curso-meta">
+                                    <p class="curso-duracion">⏱ 11 semanas</p>
+                                    <p class="curso-precio">$199</p>
+                                </div>
+                                <button class="btn btn-primary w-100" type="button">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <footer>
+            <div class="container text-center">
+                <p>© 2026 NextGen Academy | Todos los derechos reservados.</p>
+
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/facebook.svg" class="imagen-footer" alt="Facebook">
+                </a>
+
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/instagram.svg" class="imagen-footer" alt="Instagram">
+                </a>
+
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/twitter.svg" class="imagen-footer" alt="X">
+                </a>
+
+                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/whatsapp.svg" class="imagen-footer" alt="Whatsapp">
+                </a>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
