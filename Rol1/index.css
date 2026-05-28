@@ -1,0 +1,106 @@
+
+
+/* 
+universal
+etiqueta -> h1,img,p, input
+id -> unico en el archivo -> atributo id
+class -> agrupar elementos y les pongo una class
+*/
+
+* {
+    background-color: white;
+}
+
+h2 {
+    color: #1591DC!important;
+    font-size: 65px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-left: 40px;
+
+}
+
+
+#Tarjetas{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+#Menu {
+    background-color: #C4E2F5!important;
+
+
+}
+ 
+a {
+color: #1591DC!important;
+}
+
+/*
+#parrafo2 {
+    color: purple;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.grupo1 {
+    color: green;
+    font-size: 30px;
+}
+
+input[type] {
+    background-color: whitesmoke;
+}
+
+input[type="password"] {
+    border-color: black;
+}
+
+[class*="grupo"] {
+    background-color: black;
+}
+
+#section p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#section>p {
+    color: brown;
+}
+
+#section>p {
+    color: brown;
+}
+
+#hijo11 h2+p {
+    color: red;
+}
+
+#hijo2 h2~p {
+    color: blue;
+}
+
+#banner {
+    width: 200px;
+    height: auto;
+    border: 5px solid violet;
+    padding: 0px;
+    margin: 30px;
+}
+
+.cuadrado {
+    width: 100px;
+   
+    background-color: pink;
+    margin: 10px;
+}
+
+    */
