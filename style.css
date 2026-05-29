@@ -22,20 +22,20 @@ FOOTER:
 
         <p>© 2026 NextGen Academy | Todos los derechos reservados.</p>
 
-        <a href="https://facebook.com" target="_blank">
-            <img src="../images/facebook.png" class="imagen-footer" alt="Facebook">
+        
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/facebook.svg" class="imagen-footer" alt="Facebook">
         </a>
 
-        <a href="https://instagram.com" target="_blank">
-            <img src="../images/instagram.png" class="imagen-footer" alt="Instagram">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/instagram.svg" class="imagen-footer" alt="Instagram">
         </a>
 
-        <a href="https://x.com" target="_blank">
-            <img src="../images/twitter.png" class="imagen-footer" alt="X">
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/twitter.svg" class="imagen-footer" alt="X">
         </a>
-
-        <a href="https://whatsapp.com" target="_blank">
-            <img src="../images/whatsapp.png" class="imagen-footer" alt="Whatsapp">
+        <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/whatsapp.svg" class="imagen-footer" alt="Whatsapp">
         </a>
 
     </div>
@@ -84,8 +84,41 @@ NAVBAR:
 
 
 Background NavBar
-#Menu {
+header,
+#Menu,
+#Menu .container-fluid,
+#Menu .navbar-collapse,
+#Menu .navbar-nav,
+#Menu .nav-item,
+#Menu .nav-link,
+#Menu .navbar-toggler {
     background-color: #C4E2F5 !important;
+}
+
+#Menu .navbar-brand {
+    background-color: #C4E2F5;
+    padding: 6px 10px;
+    line-height: 0;
+    margin-right: 1rem;
+}
+
+#Menu .navbar-brand img {
+    display: block;
+    width: 180px;
+    height: auto;
+    max-width: none;
+}
+
+.imagen-footer {
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+.imagen-footer:hover {
+    transform: scale(1.1);
+}
 
 
 }
