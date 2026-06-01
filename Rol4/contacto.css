@@ -28,3 +28,15 @@ body {
 iframe {
     border-radius: 8px;
 }
+
+footer p {
+    color: #1591DC !important;
+    font-weight: bold; 
+}
+#Menu,
+.navbar,
+.bg-body-tertiary,
+#Menu .container-fluid,
+#Menu .navbar-collapse {
+    background-color: #C4E2F5 !important;
+}
