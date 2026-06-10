@@ -110,3 +110,30 @@ a {
 .Nombre-Estudiante {
     color: #1591DC !important;
 }
+
+#Contenedor-tarjetas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.imagen-card {
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.etiqueta-categoria {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #C4E2F5;
+    color: #0d6ead !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
