@@ -127,6 +127,57 @@ a {
     background-color: #0d6ead;
 }
 
+/* ——— Filtros por categoría ——— */
+
+.seccion-filtros {
+    padding: 0 40px 24px;
+}
+
+.texto-filtros {
+    margin: 0 0 12px;
+    font-size: 18px !important;
+    color: #2c3e50;
+}
+
+.filtros-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-filtro {
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #1591DC !important;
+    border: 2px solid #C4E2F5;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-filtro:hover {
+    border-color: #1591DC;
+    background-color: #e8f4fc;
+}
+
+.btn-filtro.activo {
+    background-color: #1591DC;
+    color: #ffffff !important;
+    border-color: #1591DC;
+}
+
+.mensaje-sin-resultados {
+    margin: 0 40px 24px;
+    padding: 16px 20px;
+    font-size: 18px !important;
+    color: #5a6a7a;
+    background-color: #e8f4fc;
+    border-left: 4px solid #1591DC;
+    border-radius: 0 8px 8px 0;
+}
+
 /* ——— Categorías ——— */
 
 .seccion-categoria {
