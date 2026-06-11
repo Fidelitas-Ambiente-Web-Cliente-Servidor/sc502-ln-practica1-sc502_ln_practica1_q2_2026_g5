@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="profesores.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="profesores.js" defer></script>
 </head>
 
 <body>
@@ -49,48 +50,8 @@
         <h2>Nuestros Profesores - NextGen Academy</h2>
         <br>
 
-        <!-- Tarjetas de profesores -->
-        <div id="Contenedor-profesores">
-            <div class="card-de-profesores" style="width: 22rem;">
-                <img src="../images/profesor1.png" class="imagen-profesor" alt="Foto profesora Ana">
-                <div class="card-body">
-                    <h5 class="card-title">Ana Rodríguez</h5>
-                    <h6 class="especialidad">Desarrollo Web Full Stack</h6>
-                    <p class="card-text">Ingeniera en Sistemas con 8 años de experiencia. Especialista en HTML, CSS,
-                        JavaScript y React.</p>
-                </div>
-            </div>
-
-            <div class="card-de-profesores" style="width: 22rem;">
-                <img src="../images/profesor2.png" class="imagen-profesor" alt="Foto profesor Carlos">
-                <div class="card-body">
-                    <h5 class="card-title">Carlos Méndez</h5>
-                    <h6 class="especialidad">Bases de Datos y SQL</h6>
-                    <p class="card-text">Administrador de bases de datos certificado. Ha trabajado con MySQL, PostgreSQL
-                        y SQL Server.</p>
-                </div>
-            </div>
-
-            <div class="card-de-profesores" style="width: 22rem;">
-                <img src="../images/profesor3.png" class="imagen-profesor" alt="Foto profesora Laura">
-                <div class="card-body">
-                    <h5 class="card-title">Laura Fernández</h5>
-                    <h6 class="especialidad">Programación en Python</h6>
-                    <p class="card-text">Desarrolladora backend con dominio en Python, Django y Flask. Apasionada por la
-                        enseñanza.</p>
-                </div>
-            </div>
-
-            <div class="card-de-profesores" style="width: 22rem;">
-                <img src="../images/profesor4.png" class="imagen-profesor" alt="Foto profesor Roberto">
-                <div class="card-body">
-                    <h5 class="card-title">Roberto Jiménez</h5>
-                    <h6 class="especialidad">Diseño UX/UI y Frontend</h6>
-                    <p class="card-text">Diseñador con experiencia en Figma y desarrollo de interfaces accesibles y
-                        responsivas.</p>
-                </div>
-            </div>
-        </div>
+        <!-- Contenedor -->
+        <div id="Contenedor-profesores"></div>
 
         <hr>
 
@@ -138,6 +99,23 @@
             </div>
         </footer>
     </main>
+
+    <!-- Modal -->
+    <div id="modalProfesor" class="modal">
+        <div class="modal-contenido">
+            <div class="modal-header">
+                <h3 id="modalNombre">Nombre del Profesor</h3>
+                <span class="modal-cerrar">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalFoto" src="" alt="Foto del profesor" class="modal-foto">
+                <p><strong>Especialidad:</strong> <span id="modalEspecialidad"></span></p>
+                <p><strong>Descripción:</strong> <span id="modalDescripcion"></span></p>
+                <p><strong>Correo:</strong> <span id="modalCorreo"></span></p>
+                <p><strong>Cursos que imparte:</strong> <span id="modalCursos"></span></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
