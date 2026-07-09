@@ -58,8 +58,15 @@ a {
 
 /* ——— Encabezado del catálogo ——— */
 
+section.encabezado-catalogo,
+section.encabezado-catalogo h1,
+section.encabezado-catalogo p,
+section.encabezado-catalogo .descripcion-catalogo {
+    background-color: #C4E2F5 !important;
+    background-image: none !important;
+}
+
 .encabezado-catalogo {
-    background: linear-gradient(135deg, #C4E2F5 0%, #ffffff 70%);
     padding: 48px 40px 36px;
     margin-bottom: 10px;
 }

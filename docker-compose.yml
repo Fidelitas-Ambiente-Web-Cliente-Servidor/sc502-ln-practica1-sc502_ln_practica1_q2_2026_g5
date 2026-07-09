@@ -1,0 +1,45 @@
+services:
+  web:
+    build: .
+    container_name: nextgen-academy-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./NextGenAcademy:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.0
+    container_name: nextgen-academy-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: NextGenAcademy_db
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./NextGenAcademy/sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: nextgen-academy-phpmyadmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8082:80"
+
+volumes:
+  db_data:
