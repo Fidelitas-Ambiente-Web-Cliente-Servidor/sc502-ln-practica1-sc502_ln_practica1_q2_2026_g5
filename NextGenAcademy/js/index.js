@@ -1,6 +1,6 @@
 
 //Array de 3 cursos con propiedades
-
+/*
 let cursos = [
     {
         nombre: "Programación básica",
@@ -77,6 +77,6 @@ for (let i = 0; i < cursos.length; i++) {
     tarjeta.appendChild(cuerpo);
 
     contenedor.appendChild(tarjeta);
-}
+}*/
 
 
