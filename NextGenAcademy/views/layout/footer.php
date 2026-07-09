@@ -19,6 +19,7 @@
         </a>
     </div>
 </footer>
+<script src="js/cursos.js"></script>
 </main>
 </body>
 </html>
