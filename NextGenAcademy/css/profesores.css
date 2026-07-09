@@ -115,6 +115,25 @@ header,
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.card-de-profesores .btn-primary {
+    background-color: #1591DC !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-de-profesores .btn-primary:hover {
+    background-color: #0f6db0 !important;
+    color: #FFFFFF !important;
+}
+
 
 #mision-vision {
     padding: 20px 40px 40px 40px;

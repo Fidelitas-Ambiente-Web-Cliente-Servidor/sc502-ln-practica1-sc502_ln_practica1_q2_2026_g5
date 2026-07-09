@@ -1,4 +1,4 @@
-const profesores = [ // Array de objetos con los profesores
+/* const profesores = [ // Array de objetos con los profesores
     {
         id: 1,
         nombre: "Ana Rodríguez",
@@ -100,4 +100,4 @@ document.addEventListener("DOMContentLoaded", function() {
             cerrarModal();
         }
     });
-});
+}); */
