@@ -17,8 +17,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img href="index.php?controller=index&action=index" src="../images/logo.png" alt="NextGen Academy" width="180"></a>
+                <a class="navbar-brand" href="index.php?controller=index&action=index">
+                    <img src="../images/logo.png" alt="NextGen Academy" width="180"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
