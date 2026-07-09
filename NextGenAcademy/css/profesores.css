@@ -1,0 +1,296 @@
+@import url("style.css");
+
+/* 
+universal
+etiqueta -> h2, h5, h6, p, img, a, footer
+id -> unico en el archivo -> atributo id
+class -> agrupar elementos y les pongo una class
+*/
+
+* {
+    background-color: white;
+}
+
+h2 {
+    color: #1591DC !important;
+    font-size: 65px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 40px;
+}
+
+h5 {
+    color: #1591DC !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h6 {
+    color: #1591DC !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    color: #1591DC !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-size: 18px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+}
+
+a {
+    color: #1591DC !important;
+    font-size: 22px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header,
+#Menu,
+#Menu .container-fluid,
+#Menu .navbar-collapse,
+#Menu .navbar-nav,
+#Menu .nav-item,
+#Menu .nav-link,
+#Menu .navbar-toggler {
+    background-color: #C4E2F5 !important;
+}
+
+#Menu .navbar-brand {
+    background-color: #C4E2F5;
+    padding: 6px 10px;
+    line-height: 0;
+    margin-right: 1rem;
+}
+
+#Menu .navbar-brand img {
+    display: block;
+    width: 180px;
+    height: auto;
+    max-width: none;
+}
+
+/* navbar */
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#Contenedor-profesores {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+
+.card-de-profesores {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.imagen-profesor {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-de-profesores .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+}
+
+.especialidad {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666 !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-de-profesores .btn-primary {
+    background-color: #1591DC !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-de-profesores .btn-primary:hover {
+    background-color: #0f6db0 !important;
+    color: #FFFFFF !important;
+}
+
+
+#mision-vision {
+    padding: 20px 40px 40px 40px;
+    background-color: white;
+}
+
+.contenedor-mision-vision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mision,
+.vision {
+    width: 500px;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+.mision h5,
+.vision h5 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mision p,
+.vision p {
+    text-align: justify;
+}
+
+.imagen-footer {
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+.imagen-footer:hover {
+    transform: scale(1.1);
+}
+
+
+footer p {
+    color: #1591DC !important;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    #Contenedor-profesores {
+        justify-content: center;
+    }
+
+    .mision,
+    .vision {
+        width: 90%;
+    }
+
+    #mision-vision {
+        padding: 20px;
+    }
+}
+
+/* Esto es para el modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: modalEntrada 0.3s ease;
+}
+
+@keyframes modalEntrada {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #C4E2F5;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header h3 {
+    color: #1591DC;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    background-color: #C4E2F5;
+}
+
+.modal-cerrar {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1591DC;
+    background-color: #C4E2F5;
+}
+
+.modal-cerrar:hover {
+    color: #0f6db0;
+}
+
+.modal-body {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.modal-foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 3px solid #1591DC;
+}
+
+.modal-body p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.modal-body strong {
+    color: #1591DC;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
