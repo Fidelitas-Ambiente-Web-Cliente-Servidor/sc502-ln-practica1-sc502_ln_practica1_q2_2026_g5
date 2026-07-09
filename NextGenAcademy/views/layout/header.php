@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/profesores.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/cursos.css?v=3">
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 

@@ -280,3 +280,12 @@ section.encabezado-catalogo .descripcion-catalogo {
         justify-content: center;
     }
 }
+
+/* Override: index.css y profesores.css aplican * { background: white } */
+main section.encabezado-catalogo,
+main section.encabezado-catalogo h1,
+main section.encabezado-catalogo p,
+main section.encabezado-catalogo .descripcion-catalogo {
+    background-color: #C4E2F5 !important;
+    background-image: none !important;
+}
