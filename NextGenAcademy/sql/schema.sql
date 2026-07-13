@@ -57,4 +57,22 @@ INSERT INTO `profesores` (`nombre`, `especialidad`, `bio`, `foto`, `activo`) VAL
 ('Roberto Jiménez', 'Diseño UX/UI y Frontend', 'Diseñador con experiencia en Figma y desarrollo de interfaces accesibles y responsivas.', 'images/profesor4.png', 1),
 ('María Torres', 'Inteligencia Artificial', 'Doctora en Ciencias de la Computación. Especialista en Machine Learning y Procesamiento de Lenguaje Natural.', 'images/profesor4.png', 1);
 
+CREATE TABLE `contacto` (
+  `id_contacto` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `telefono` varchar(20) NOT NULL,
+  `asunto` varchar(150) NOT NULL,
+  `mensaje` text NOT NULL,
+  `fecha_envio` timestamp DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `contacto` (`nombre`, `correo`, `telefono`, `asunto`, `mensaje`) VALUES
+('Juan Pérez', 'juan.perez@gmail.com', '8888-1111', 'Información sobre Matrícula', 'Me gustaría saber cuáles son los requisitos para el curso de Full Stack.'), 
+('María López', 'maria.lopez@yahoo.com', '8777-2222', 'Consulta de Horarios', '¿Tienen clases los fines de semana para el curso de Python para principiantes?'), 
+('Pedro Rodríguez', 'pedro.rod@outlook.com', '8666-3333', 'Costos y Financiamiento', 'Quiero consultar si aplican descuentos por matricular más de dos cursos de infraestructura.'), 
+('Ana Laura Brenes', 'anabrenes@hotmail.com', '8555-4444', 'Problema con la plataforma', 'Hola, no he podido ingresar al entorno virtual desde ayer. Agradezco su ayuda.'),
+('Luis Carlos Vega', 'lvega.sistemas@gmail.com', '8444-5555', 'Contacto Corporativo', 'Buenas tardes, estamos interesados en capacitar a nuestro equipo de desarrollo en bases de datos.');
+
 COMMIT;
+

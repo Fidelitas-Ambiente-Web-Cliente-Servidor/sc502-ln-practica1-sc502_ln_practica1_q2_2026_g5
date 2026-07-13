@@ -30,6 +30,11 @@ switch ($action) {
         $controller->show();
         break;
 
+    case 'store':
+        // POST — Guardar datos de contacto
+        $controller->store();
+        break;
+
     default:
         http_response_code(404);
         die('<h2>404 — Acción no encontrada</h2>');
